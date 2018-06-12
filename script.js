@@ -101,18 +101,18 @@ contact.hover(function(){
     }
 );
 
-/*
+
 $("body").mousemove(function(event){
-    var d = distance(event.clientX,event.clientY,steam.offset().left,steam.offset().top);
-    var s = slope(event.clientX,event.clientY,steam.offset().left,steam.offset().top);
+    var d = distance(event.clientX,event.clientY,steam.offset().left+x,steam.offset().top+y);
+    console.log(d);
     if (d < 100){
-        x += 10;
-        y += 10;
+        x += steam.offset().left - event.clientX;
+        y += steam.offset().top - event.clientY;
         steam.css("left",x);
         steam.css("top",y);
     }
 });
-*/
+
 
 
 
