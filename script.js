@@ -7,13 +7,25 @@ var about = $("#about");
 var port = $("#port");
 var contact = $("#contact");
 var all = $(".footer");
+var steam = $("#steamb");
+window.steam = steam;
 var time;
+var x = 0;
+var y = 0;
 
 function hideContent(){
     $(".stuff").hide();
 }
 hideContent();
 $(".aboutme").hide();
+
+function distance(x1, y1, x2, y2){
+    return Math.sqrt((y2-y1)**2+(x2-x1)**2);
+}
+
+function slope(x1, y1, x2, y2){
+    return (y2-y1)/(x2-x1);
+}
 
 all.click(function(){
     $(".aboutme").show();
@@ -89,10 +101,18 @@ contact.hover(function(){
     }
 );
 
-
-
-
-
+/*
+$("body").mousemove(function(event){
+    var d = distance(event.clientX,event.clientY,steam.offset().left,steam.offset().top);
+    var s = slope(event.clientX,event.clientY,steam.offset().left,steam.offset().top);
+    if (d < 100){
+        x += 10;
+        y += 10;
+        steam.css("left",x);
+        steam.css("top",y);
+    }
+});
+*/
 
 
 

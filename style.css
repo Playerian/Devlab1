@@ -92,12 +92,13 @@ body{
     border: green solid;
 }
 .contact{
-    display:block;
+    display:flex;
+    justify-content:space-around;
 }
 .ct{
+    position:relative;
     background:yellow;
     margin-bottom: 20px;
     color:black;
-    width:auto;
     text-align:center;
 }
