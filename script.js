@@ -7,6 +7,7 @@ var about = $("#about");
 var port = $("#port");
 var contact = $("#contact");
 var all = $(".footer");
+var time;
 
 function hideContent(){
     $(".stuff").hide();
@@ -45,22 +46,48 @@ contact.click(function(){
 });
 
 me.hover(function(){
-    setTimeout(function(){
+    time = setTimeout(function(){
         $("#mainText").show();
-    },2000)
-});
+    },1000);
+},
+    function(){
+        $("#mainText").hide();
+        clearTimeout(time);
+    }
+);
 
 about.hover(function(){
-    $("#aboutText").show();
-});
+    time = setTimeout(function(){
+        $("#aboutText").show();
+    },1000);
+},
+    function(){
+        $("#aboutText").hide();
+        clearTimeout(time);
+    }
+);
 
 port.hover(function(){
-    $("#portText").show();
-});
+    time = setTimeout(function(){
+        $("#portText").show();
+    },1000);
+},
+    function(){
+        $("#portText").hide();
+        clearTimeout(time);
+    }
+);
 
 contact.hover(function(){
-    $("#contText").show();
-});
+    time = setTimeout(function(){
+        $("#contactText").show();
+    },1000);
+},
+    function(){
+        $("#contactText").hide();
+        clearTimeout(time);
+    }
+);
 
 
 
