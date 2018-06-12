@@ -80,11 +80,11 @@ port.hover(function(){
 
 contact.hover(function(){
     time = setTimeout(function(){
-        $("#contactText").show();
+        $("#contText").show();
     },1000);
 },
     function(){
-        $("#contactText").hide();
+        $("#contText").hide();
         clearTimeout(time);
     }
 );
