@@ -45,7 +45,9 @@ contact.click(function(){
 });
 
 me.hover(function(){
-    $("#mainText").show();
+    setTimeout(function(){
+        $("#mainText").show();
+    },2000)
 });
 
 about.hover(function(){
