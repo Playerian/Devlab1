@@ -20,7 +20,7 @@ hideContent();
 $(".aboutme").hide();
 
 function distance(x1, y1, x2, y2){
-    return Math.sqrt((y2-y1)**2+(x2-x1)**2);
+    return Math.sqrt(Math.pow((y2-y1), 2) + Math.pow((x2-x1), 2));
 }
 
 function slope(x1, y1, x2, y2){
@@ -103,11 +103,11 @@ contact.hover(function(){
 
 
 $("body").mousemove(function(event){
-    var d = distance(event.clientX,event.clientY,steam.offset().left+x,steam.offset().top+y);
-    console.log(d);
+    var d = distance(event.clientX,event.clientY, x, y);
+    //console.log(d);
     if (d < 100){
-        x += steam.offset().left - event.clientX;
-        y += steam.offset().top - event.clientY;
+        x += x - event.clientX;
+        y += y - event.clientY;
         steam.css("left",x);
         steam.css("top",y);
     }
