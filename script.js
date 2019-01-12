@@ -8,10 +8,7 @@ var port = $("#port");
 var contact = $("#contact");
 var all = $(".footer");
 var steam = $("#steamb");
-window.steam = steam;
 var time;
-var x = 0;
-var y = 0;
 
 function hideContent(){
     $(".stuff").hide();
@@ -100,18 +97,6 @@ contact.hover(function(){
         clearTimeout(time);
     }
 );
-
-
-$("body").mousemove(function(event){
-    var d = distance(event.clientX,event.clientY, x, y);
-    //console.log(d);
-    if (d < 100){
-        x += x - event.clientX;
-        y += y - event.clientY;
-        steam.css("left",x);
-        steam.css("top",y);
-    }
-});
 
 
 

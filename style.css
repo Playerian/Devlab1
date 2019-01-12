@@ -2,16 +2,17 @@ body{
     font-family: 'Open Sans', sans-serif;
     background:white;
     animation: gradient 5s linear 2s infinite alternate;
+    
 }
 
-@keyframes gradient {
-    from{
-        background: white;
-    }
-    to{
-        background: black;
-    }
-}
+/*@keyframes gradient {*/
+/*    from{*/
+/*        background: white;*/
+/*    }*/
+/*    to{*/
+/*        background: black;*/
+/*    }*/
+/*}*/
 
 .row{   
     
@@ -34,10 +35,12 @@ body{
     animation: footer 5s linear 2s infinite alternate;
 }
 .aboutme{
+    border-radius:50px;
     border:3px solid black;   
     color:black;
     background:white;
     animation: footer 5s linear 2s infinite alternate;
+    padding: 10px;
 }
 .footer{
     color:black;
@@ -48,16 +51,16 @@ body{
     justify-content: space-around;
 }
 
-@keyframes footer{
-    from{
-        color:black;
-        background:white;
-    }
-    to{
-        color:white;
-        background:black;
-    }
-}
+/*@keyframes footer{*/
+/*    from{*/
+/*        color:black;*/
+/*        background:white;*/
+/*    }*/
+/*    to{*/
+/*        color:white;*/
+/*        background:black;*/
+/*    }*/
+/*}*/
 
 
 .item{
