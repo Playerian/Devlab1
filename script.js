@@ -16,14 +16,6 @@ function hideContent(){
 hideContent();
 $(".aboutme").hide();
 
-function distance(x1, y1, x2, y2){
-    return Math.sqrt(Math.pow((y2-y1), 2) + Math.pow((x2-x1), 2));
-}
-
-function slope(x1, y1, x2, y2){
-    return (y2-y1)/(x2-x1);
-}
-
 all.click(function(){
     $(".aboutme").show();
 });
@@ -97,11 +89,5 @@ contact.hover(function(){
         clearTimeout(time);
     }
 );
-
-
-
-
-
-
 
 });
