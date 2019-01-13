@@ -4,6 +4,15 @@ body{
     animation: gradient 5s linear 2s infinite alternate;
 }
 
+#images{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#myName{
+    
+}
+
 /*@keyframes gradient {*/
 /*    from{*/
 /*        background: white;*/
