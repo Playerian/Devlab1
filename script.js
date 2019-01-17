@@ -66,7 +66,7 @@ me.click(function(){
         element.css('height', $window.height());
         $body.css('overflow', 'hidden');
         timeout = setTimeout(() => {
-            if (expanded){
+            if (element.hasClass('expanded')){
                 $('#mainCont').appendTo(element);
                 $('#mainCont').show();
                 $('#headPic').show();
@@ -105,7 +105,7 @@ about.click(function(){
         element.css('height', $window.height());
         $body.css('overflow', 'hidden');
         timeout = setTimeout(() => {
-            if (expanded){
+            if (element.hasClass('expanded')){
                 $('#aboutMe').appendTo(element);
                 $('#aboutMe').show();
                 element.addClass('scrollable');
@@ -146,7 +146,7 @@ port.click(function(){
         element.css('height', $window.height());
         $body.css('overflow', 'hidden');
         timeout = setTimeout(() => {
-            if (expanded){
+            if (element.hasClass('expanded')){
                 $('#portfolio').appendTo(element);
                 $('#portfolio').show();
                 element.addClass('scrollable');
@@ -187,7 +187,7 @@ contact.click(function(){
         element.css('height', $window.height());
         $body.css('overflow', 'hidden');
         timeout = setTimeout(() => {
-            if (expanded){
+            if (element.hasClass('expanded')){
                 $('#contacter').appendTo(element);
                 $('#contacter').show();
                 element.addClass('scrollable');
