@@ -1,4 +1,9 @@
+html{
+    height: 100%;
+}
+
 body{
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
     background:white;
     animation: gradient 5s linear 2s infinite alternate;
@@ -50,13 +55,14 @@ body{
     animation: footer 5s linear 2s infinite alternate;
     padding: 10px;
 }
-.footer{
+.header{
     color:black;
     background:white;
     animation: footer 5s linear 2s infinite alternate;
     margin-bottom:60px;
     display:flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 
 /*@keyframes footer{*/
@@ -80,11 +86,15 @@ body{
     color: white;
     background: black;
     padding:0px;
+    z-index: 1;
 }
-.item:hover{
+.item:hover:not(.expanded){
     position:relative;
     padding: 30px;
-    height: 100px;
+    height: 150px;
+}
+.expanded{
+    position: relative;
 }
 .hidden{
     display:none;
@@ -96,9 +106,11 @@ body{
 }
 
 
+#headPic{
+    display:none;
+}
 
-
-#image{
+#image, #headPic{
     border-radius: 50%;
     border: green solid;
 }
@@ -112,4 +124,26 @@ body{
     margin-bottom: 20px;
     color:black;
     text-align:center;
+}
+
+#mainCont{
+    border: solid white 1px;
+    margin: 20px;
+    border-radius: 9px;
+}
+
+.scrollable{
+    overflow:scroll;
+}
+
+.fixed{
+    position:fixed;
+}
+
+#portfolio, #contacter{
+    text-align: left;
+}
+
+.link{
+    color:white;
 }
