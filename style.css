@@ -155,7 +155,12 @@ body{
     justify-content: space-around;
 }
 
+.projectWindow{
+    margin: 100px;
+    border: solid 10px cyan;
+}
+
 .projectPic{
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
 }
