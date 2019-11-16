@@ -147,3 +147,15 @@ body{
 .link{
     color:white;
 }
+
+/* projectList */
+#projectList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectPic{
+    width: 300px;
+    height: 300px;
+}
